@@ -1,0 +1,62 @@
+body{
+        display: flex;
+        justify-content: center;
+}
+label,input,p,button,h2,h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+        font-weight: bold;
+}
+.main-section{
+        width:700px;
+}
+h1,h2{
+        font-size: 1.2em;
+}
+p{
+        font-weight: lighter;
+        color: gray;
+        text-align: justify;
+}
+.formulair_section{
+        margin-top: 70px;
+}
+input{
+        border-radius:6px;
+        border: 1px solid;
+        height: 40px;
+        width: 320px;
+        padding: 5px;
+        font-size:1.1em;
+}
+form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between 20px;
+        gap: 25px;
+}
+.formulair_commentaire_label{
+        display: flex;
+        justify-content: space-between;
+}
+textarea{
+        height: 100px;
+        width: 670px;
+        border-radius: 6px;
+        border: 1px solid black;
+        padding:10px;
+        font-size:1.4em;
+}
+.formulair_commentaire_button{
+        display: flex;
+        justify-content: end;
+}
+.formulair_commentaire_button button{
+        border-radius: 6px;
+        border: 0 solid rgb(26, 135, 95);
+        background: rgb(26, 135, 95);
+        color: #FFF;
+        height: 50px;
+        width: 100px;
+}
