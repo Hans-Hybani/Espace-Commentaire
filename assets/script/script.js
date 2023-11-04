@@ -1,12 +1,13 @@
 function addComment() {
-        let nomPrenom = document.getElementById('inputNomFormulaire')
-        let areaText = document.getElementById('textAreaFormulaire')
+        let NewCommentaire = document.getElementById('liste_de_commentaire')
 
         let prenom = document.getElementById('prenom')
         let nom = document.getElementById('nom')
         let textarea = document.getElementById('textArea')
 
         let hr = document.createElement("hr")
+        let retourLigne = document.createElement("br")
+        let area = document.createElement("p")
         
         let prenomText = document.createTextNode(prenom.value)
         let nomText = document.createTextNode(nom.value)
@@ -22,22 +23,25 @@ function addComment() {
         }else if ((prenom.value && nom.value && textarea.value) == "") {
                 alert("Veuillez remplire les deux autres champs")
         }else{
-                nomPrenom.appendChild(hr)
-                nomPrenom.appendChild(prenomText)
-                nomPrenom.appendChild(espaceT)
-                nomPrenom.appendChild(nomText)
-                areaText.appendChild(TxtArea) 
-
-                areaText.classList.add("areaTextStyle")
-                nomPrenom.classList.add("nomPrenomStyle")
+                NewCommentaire.appendChild(hr)
+                NewCommentaire.appendChild(prenomText)
+                NewCommentaire.appendChild(espaceT)
+                NewCommentaire.appendChild(nomText)
+                NewCommentaire.appendChild(retourLigne)
+                area.appendChild(TxtArea) 
+                NewCommentaire.appendChild(area)
+                
+                NewCommentaire.classList.add("nomPrenomStyle")
+                area.classList.add("areaTextStyle")
+                
         }
  }
 function removeText() {
-        document.getElementById('prenom').value = "";
-        document.getElementById('nom').value = "";
-        document.getElementById('textArea').value = "";
+        document.getElementById('prenom').value = ""
+        document.getElementById('nom').value = ""
+        document.getElementById('textArea').value = ""
 }
  function Run() {
         addComment()
         removeText()
- }
+}
