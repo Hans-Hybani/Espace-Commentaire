@@ -15,7 +15,7 @@
                 </div>
                 <section id="formulair_section">
                         <h2  id="titreDuFormulaire">Ecrire un commentaire</h2>
-                        <form action="">
+                        <form action="/monformulaire" method="post" name="formulaire_de_commentaire">
                                 <div class="formulair_prenom">
                                         <label for="prenom">Prénom :</label><br>
                                         <input type="text" id="prenom"><br>
@@ -26,8 +26,8 @@
                                 </div>
                                 <div class="formulair_commentaire">
                                         <div class="formulair_commentaire_label">
-                                                <label for="commentaire">Commentaire</label>
-                                                <label for="instruction" class="instruction">Max. 500 caractères</label>  
+                                                <label for="btt">Commentaire</label>
+                                                <label for="btt" class="instruction">Max. 500 caractères</label>  
                                         </div>
                                         <textarea name="commentaire" id="textArea" required></textarea><br>
                                         <div class="formulair_commentaire_button">
