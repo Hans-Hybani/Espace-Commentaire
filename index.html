@@ -3,9 +3,45 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style/style.css">
         <title>Document</title>
 </head>
 <body>
-        
+        <section class="main-section">
+                <h1>Mark Edwards</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facere magnam mollitia nobis quidem provident veritatis. Reprehenderit quasi, ut in perspiciatis inventore, quae suscipit commodi deserunt asperiores excepturi eius aut.</p>
+                <div id="liste_de_commentaire">
+                        <div id="inputNomFormulaire">
+
+                        </div>    
+                        <div id="textAreaFormulaire">
+
+                        </div>
+                </div>
+                <section id="formulair_section">
+                        <h2  id="titreDuFormulaire">Ecrire un commentaire</h2>
+                        <form action="">
+                                <div class="formulair_prenom">
+                                        <label for="prenom">Prénom :</label><br>
+                                        <input type="text" id="prenom"><br>
+                                </div>
+                                <div class="formulair_nom">
+                                        <label for="nom">Nom :</label><br>
+                                        <input type="text" id="nom"><br>
+                                </div>
+                                <div class="formulair_commentaire">
+                                        <div class="formulair_commentaire_label">
+                                                <label for="commentaire">Commentaire</label>
+                                                <label for="instruction" class="instruction">Max. 500 caractères</label>  
+                                        </div>
+                                        <textarea name="commentaire" id="textArea" required></textarea><br>
+                                        <div class="formulair_commentaire_button">
+                                                <button id="btt" onclick="Run()" type="button">Envoyer</button>
+                                        </div>
+                                </div>
+                        </form>
+                </section>
+        </section>
+        <script src="./assets/script/script.js"></script>
 </body>
 </html>
