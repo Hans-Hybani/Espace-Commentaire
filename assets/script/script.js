@@ -36,7 +36,7 @@ function addComment() {
                 
         }
  }
-export function removeText() {
+function removeText() {
         document.getElementById('prenom').value = ""
         document.getElementById('nom').value = ""
         document.getElementById('textArea').value = ""
