@@ -21,7 +21,7 @@ function addComment() {
         }else if (textarea.value == "" && (prenom.value && nom.value) !=="") {
                 alert("Veuillez entrer votre commentaire")
         }else if ((prenom.value && nom.value && textarea.value) == "") {
-                alert("Veuillez remplire les autres champs")
+                alert("Veuillez remplire tout les champs")
         }else{
                 NewCommentaire.appendChild(hr)
                 NewCommentaire.appendChild(prenomText)
