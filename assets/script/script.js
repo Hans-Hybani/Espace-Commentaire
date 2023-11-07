@@ -21,7 +21,7 @@ function addComment() {
         }else if (textarea.value == "" && (prenom.value && nom.value) !=="") {
                 alert("Veuillez entrer votre commentaire")
         }else if ((prenom.value && nom.value && textarea.value) == "") {
-                alert("Veuillez remplire les deux autres champs")
+                alert("Veuillez remplire les autres champs")
         }else{
                 NewCommentaire.appendChild(hr)
                 NewCommentaire.appendChild(prenomText)
@@ -36,7 +36,7 @@ function addComment() {
                 
         }
  }
-function removeText() {
+export function removeText() {
         document.getElementById('prenom').value = ""
         document.getElementById('nom').value = ""
         document.getElementById('textArea').value = ""
@@ -45,3 +45,4 @@ function removeText() {
         addComment()
         removeText()
 }
+
