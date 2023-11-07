@@ -7,15 +7,20 @@
         <title>Espace Commentaire</title>
 </head>
 <body>
+        <!-- Ce fichier n'a pas été divisé en trois partie, header-main-footer du fait de sa simplicité ainsi que la seule présence du formulaire comme information -->
         <section class="main-section">
                 <h1>Mark Edwards</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facere magnam mollitia nobis quidem provident veritatis. Reprehenderit quasi, ut in perspiciatis inventore, quae suscipit commodi deserunt asperiores excepturi eius aut.</p>
+                <!-- Cette div vide est celle qui affichera les informations soumis par par le formulaire, via la manipulation
+                du DOM avec notre code javascript -->
                 <div id="liste_de_commentaire">
                         
                 </div>
                 <section id="formulair_section">
                         <h2  id="titreDuFormulaire">Ecrire un commentaire</h2>
                         <form action="/monformulaire" method="post" name="formulaire_de_commentaire">
+                                <!-- L'ajout des div dans ce formualire est choix personnel afin de m'aider à
+                                mieux manipuler certaine partie lorsque je viendrais à donner du style à mon fichier -->
                                 <div class="formulair_prenom">
                                         <label for="prenom">Prénom :</label><br>
                                         <input type="text" id="prenom"><br>

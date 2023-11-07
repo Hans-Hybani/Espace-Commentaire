@@ -14,6 +14,8 @@ function addComment() {
         let espaceT = document.createTextNode(" ")
         let TxtArea = document.createTextNode(textarea.value)
 
+        /*La partie du code qui affiche un message d'erreur lorsqu'un champ est vide
+        ou pas*/ 
         if(prenom.value == "" && (nom.value && textarea.value) !==""){
                 alert("Veuillez entrer votre prénom")
         }else if(nom.value == "" && (prenom.value && textarea.value) !==""){
@@ -33,15 +35,15 @@ function addComment() {
                 
                 NewCommentaire.classList.add("nomPrenomStyle")
                 area.classList.add("areaTextStyle")
-                
         }
  }
+//La fonction qui enlève le text saisie lorsqu'on soummet notre formulaire 
 function removeText() {
         document.getElementById('prenom').value = ""
         document.getElementById('nom').value = ""
         document.getElementById('textArea').value = ""
 }
- function Run() {
+function Run() {
         addComment()
         removeText()
 }
